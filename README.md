@@ -78,3 +78,10 @@ using jekyll boostrap template it would look like this:
 
 {% endlayout %}
 ````
+
+
+### buttons
+Theres a few types to select from: anchor, button, input, submit
+````
+{% include button.html link="http://richardchiriboga.com" cid="btn_id" cname="btn btn-default" txt="click here to..." %}
+````
