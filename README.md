@@ -7,7 +7,7 @@ This is a simple breakdown of Bootstrap 3 components broken down for use within 
 
 
 ### section
-- variables: cname, cid (section class, section id)
+Variables: cname, cid (section class, section id)
 ```html
 <section class="container {{cname}}" id="{{ cid }}">
   {{ content }}
@@ -15,7 +15,7 @@ This is a simple breakdown of Bootstrap 3 components broken down for use within 
 ```
 
 ### container
-- variables: cname, cid (class, id )
+Variables: cname, cid (class, id )
 ```html
 <div class="container {{cname}}" id="{{ cid }}">
   {{ content }}
@@ -23,7 +23,7 @@ This is a simple breakdown of Bootstrap 3 components broken down for use within 
 ```
 
 ### row
-- variables: cname, cid (class, id )
+Variables: cname, cid (class, id )
 ```html
 <div class="row {{cname}}" id="{{ cid }}">
   {{ content }}
@@ -31,7 +31,7 @@ This is a simple breakdown of Bootstrap 3 components broken down for use within 
 ```
 
 ### column
-- variables: cname, cid (class, id )
+Variables: cname, cid (class, id )
 ```html
 <div class="{{cname}}" id="{{ cid }}">
   {{ content }}
@@ -57,7 +57,7 @@ The following is example usage. You can create:
 ```
 
 
-and now with templating as:
+using jekyll boostrap template it would look like this:
 ````
 {% layout layout: "container" cid: "div_id" cname: "container_extra_class" "%}
 
