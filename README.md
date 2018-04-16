@@ -85,3 +85,9 @@ Theres a few types to select from: anchor, button, input, submit
 ````
 {% include button.html button_type="anchor" link="http://richardchiriboga.com" cid="btn_id" cname="btn btn-default" txt="click here to..." %}
 ````
+
+### youtube
+Easily add a youtube video responsively embedded to any page
+````
+{% include youtube.html video_id ="cRZOgd7mcY8" %}
+````
