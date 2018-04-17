@@ -97,3 +97,12 @@ Easily add a youtube video responsively embedded to any page
 ````
 {% include youtube.html video_id ="cRZOgd7mcY8" %}
 ````
+
+
+### Unordered / Ordered Lists
+Each one works the exact way. ul / ol respectively.
+```html
+{% include undordered_list.html cname ="class" cid="your_id" %}
+{% include ordered.html cname ="class" cid="your_id" %}
+```
+
