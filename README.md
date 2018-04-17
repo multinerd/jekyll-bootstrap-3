@@ -59,18 +59,18 @@ The following is example usage. You can create:
 
 using jekyll boostrap template it would look like this:
 ````
-{% layout layout: "container" cid: "div_id" cname: "container_extra_class" "%}
+{% layout layout: "bootstrap/container" cid: "div_id" cname: "container_extra_class" "%}
 
 
-{% layout layout: "row" cid: "row_id" cname: "row_extra_class" "%}
+{% layout layout: "bootstrap/row" cid: "row_id" cname: "row_extra_class" "%}
 
-{% layout layout: "column" cname: "col-sm-4" cid: "column_id"  "%}
+{% layout layout: "bootstrap/column" cname: "col-sm-4" cid: "column_id"  "%}
 # Header column 1
 {% endlayout %}
-{% layout layout: "column" cname: "col-sm-4" cid: "column_id"  "%}
+{% layout layout: "bootstrap/column" cname: "col-sm-4" cid: "column_id"  "%}
 # Header column 2
 {% endlayout %}
-{% layout layout: "column" cname: "col-sm-4" cid: "column_id"  "%}
+{% layout layout: "bootstrap/column" cname: "col-sm-4" cid: "column_id"  "%}
 # Header column 3
 {% endlayout %}
 
@@ -83,7 +83,7 @@ using jekyll boostrap template it would look like this:
 ### buttons
 Theres a few types to select from: anchor, button, input, submit
 ````
-{% include button.html 
+{% include bootstrap/button.html 
 	button_type="anchor" 
 	link="http://richardchiriboga.com" 
 	cid="btn_id" 
@@ -95,14 +95,23 @@ Theres a few types to select from: anchor, button, input, submit
 ### youtube
 Easily add a youtube video responsively embedded to any page
 ````
-{% include youtube.html video_id ="cRZOgd7mcY8" %}
+{% include bootstrap/youtube.html video_id ="cRZOgd7mcY8" %}
 ````
 
 
 ### Unordered / Ordered Lists
 Each one works the exact way. ul / ol respectively.
-```html
-{% include undordered_list.html cname ="class" cid="your_id" %}
-{% include ordered.html cname ="class" cid="your_id" %}
-```
+````
+{% include bootstrap/undordered_list.html cname ="class" cid="your_id" %}
+````
+````
+{% include bootstrap/ordered.html cname ="class" cid="your_id" %}
+````
 
+
+### Labels
+Each one works the exact way. ul / ol respectively.
+```html
+{% include bootstrap/label.html cname ="class" cid="your_id" %}
+{% include bootstrap/ordered.html cname ="class" cid="your_id" %}
+```
