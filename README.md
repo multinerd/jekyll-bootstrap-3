@@ -1,11 +1,19 @@
 # Jekyll Bootstrap 3
+------
+Seperate code from content using this.  Render bootstrap-able components via a smart template plugin.
 
-This is a simple breakdown of Bootstrap 3 components broken down for use within Jekyll.
+## Requirements
+------
+- You need to have **bootstrap** (doesn't matter how you install it as long as you have the css file.)
+- You need to include the **layout_template.rb** into your **_plugins** directory.
+- Add the **bootstrap** folder into your **_includes** folder. 
+
+
+
 
 
 ## Breakdown
-
-
+------
 ### section
 Variables: cname, cid (section class, section id)
 ```html
