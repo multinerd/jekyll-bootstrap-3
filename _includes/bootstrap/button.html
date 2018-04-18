@@ -5,7 +5,7 @@
 <button class="{% if include.cname %} {{ include.cname }} {% endif %}" {% if include.cid %} id="{{ include.cid }}" {% endif %} type="submit" {% if include.link %} href="{{ include.link }}" {% endif %} >{{ txt }}</button>
 
 {% elsif include.button_type == "input" %}
-<input class="{% if include.cname %} {{ include.cname }} {% endif %}" {% if include.cid %} id="{{ include.cid }}" {% endif %} type="button" value="Input">
+<input class="{% if include.cname %} {{ include.cname }} {% endif %}" {% if include.cid %} id="{{ include.cid }}" {% endif %} type="button" value="{{ txt }}">
 
 
 {% elsif include.button_type == "submit" %}
